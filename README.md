@@ -1,1 +1,1 @@
-# VIM
+# UNIX config files
