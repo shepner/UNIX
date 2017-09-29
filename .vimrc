@@ -11,11 +11,21 @@ if has("gui_running")
    colorscheme torte
 endif
 
-" Only display 2 spaces for tabs
-set tabstop=2
+; indenting is 2 spaces
+set shiftwidth=2
 
 " auto indent new lines
 set autoindent
+
+" does the right thing (mostly) in programs
+set smartindent
+
+" don't use actual tab character
+set expandtab
+
+" Only display 2 spaces for tabs
+set tabstop=2
+
 
 " dont keep a backup file
 set nobackup
