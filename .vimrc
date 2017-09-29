@@ -26,6 +26,15 @@ set expandtab
 " Only display 2 spaces for tabs
 set tabstop=2
 
+" To indent the current line, or a visual block:
+"
+" ctrl-t, ctrl-d  - indent current line forward, backwards 
+"                   (insert mode)
+" visual > or <   - indent block by sw (repeat with . )
+" To stop indenting when pasting with the mouse, add this to your .vimrc:
+" :set pastetoggle=<f5>
+" then try hitting the F5 key while in insert mode (or just :set paste).
+
 
 " dont keep a backup file
 set nobackup
