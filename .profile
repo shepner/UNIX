@@ -25,7 +25,7 @@ settings_macports() {  # MacPorts
   fi
 }
 
-saettings_anaconda() {  # Anaconda
+settings_anaconda() {  # Anaconda
   if [ -d $HOME/anaconda/bin ] ; then
     export PATH=$HOME/anaconda/bin:$PATH
   fi
@@ -49,7 +49,7 @@ case `uname` in
     settings_history
     settings_homebrew
     settings_macports
-    saettings_anaconda
+    settings_anaconda
     settings_perlbrew
     settings_personal
     ;;
