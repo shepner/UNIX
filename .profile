@@ -9,17 +9,17 @@ settings_history() {
 }
 
 settings_homebrew() {  # Homebrew
-  if [ -d $HOME/homebrew ] ; then  #alternative location
+  if [ -d $HOME/homebrew ] ; then  # alternative location
     export PATH=$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH
   fi
 
-  if [ -d /usr/local/bin ] ; then  #default location
+  if [ -d /usr/local/bin ] ; then  # default location
     export PATH=/usr/local/bin:/usr/local/sbin:$PATH
   fi
 }
 
 settings_macports() {  # MacPorts
-  if [ -d $HOME/macports ] ; then  #alternative location
+  if [ -d $HOME/macports ] ; then  # alternative location
     export PATH=$HOME/macports/bin:$HOME/macports/sbin:$PATH
     export MANPATH=$HOME/macports/share/man:$MANPATH
   fi
